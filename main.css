@@ -1,0 +1,49 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "hero hero hero"
+        ". services ."
+        ". blog ."
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+header {
+    background: #eee;
+    grid-area: header;
+}
+
+.hero {
+    background: #63f;
+    grid-area: hero;
+}
+
+.services {
+    background: pink;
+    grid-area: services;
+}
+
+.blog {
+    background: #6f3;
+    grid-area: blog;
+}
+
+footer {
+    background: #555;
+    color: #fff;
+    grid-area: footer;
+
+}
